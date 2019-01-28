@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.bestlinkstudio.mas.parent</groupId>
-	<artifactId>landasoft-default-parent</artifactId>
-	<version>0.0.1</version>
+		<artifactId>landasoft-default-parent</artifactId>
+		<version>0.0.1</version>
 	</parent>
 	<groupId>com.landasoft.mas.demo.redis</groupId>
 	<artifactId>spring-boot-demo-redis</artifactId>
