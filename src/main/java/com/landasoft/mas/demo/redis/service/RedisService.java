@@ -18,13 +18,13 @@ package com.landasoft.mas.demo.redis.service;
 public interface RedisService {
 	/**
 	 * 
-	 * <p>Title: addString</p>  
+	 * <p>Title: setString</p>  
 	 * <p>Description: 将String放入redis缓存</p>  
 	 * @param key
 	 * @param value
 	 * @param timeout
 	 */
-	public void addString(String key,Object value,long timeout);
+	public boolean setString(String key,Object value,long timeout);
 	/**
 	 * 
 	 * <p>Title: getString</p>  

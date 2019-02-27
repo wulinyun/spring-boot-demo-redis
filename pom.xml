@@ -4,6 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.landasoft.mas.parent</groupId>
+		<!-- <artifactId>landasoft-base-parent</artifactId> -->
 		<artifactId>landasoft-default-parent</artifactId>
 		<version>0.0.1</version>
 	</parent>
@@ -32,6 +33,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- 注册中心客户端依赖 
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		-->
 	</dependencies>
 
 	<build>

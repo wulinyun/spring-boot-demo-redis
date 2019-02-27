@@ -27,7 +27,7 @@ public class RedisServiceImpl implements RedisService{
 	private RedisUtil redisUtil;
 
 	/* (non-Javadoc)
-	 * <p>Title: addString</p>  
+	 * <p>Title: setString</p>  
 	 * <p>Description: 服务实现</p>  
 	 * @param key
 	 * @param value
@@ -35,8 +35,8 @@ public class RedisServiceImpl implements RedisService{
 	 * @see com.landasoft.mas.demo.redis.service.RedisService#addString(java.lang.String, java.lang.Object, long)
 	 */
 	@Override
-	public void addString(String key, Object value, long timeout) {
-		redisUtil.set(key, value, timeout);
+	public boolean setString(String key, Object value, long timeout) {
+		return redisUtil.set(key, value, timeout);
 	}
 
 	/* (non-Javadoc)

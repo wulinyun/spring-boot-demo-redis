@@ -6,13 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.landasoft.mas.demo.redis.service.RedisService;
 import com.landasoft.mas.demo.redis.utils.RedisUtil;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringBootDemoRedisApplicationTests {
 	@Autowired
-	private RedisUtil redisUtil;
+	private RedisService redisService;
 	@Test
 	public void contextLoads() {
 	}
@@ -24,7 +25,7 @@ public class SpringBootDemoRedisApplicationTests {
 	@Test
 	public void setString() {
 		
-		System.out.println(redisUtil.set("setString", "setString", 60));
+		System.out.println(redisService.setString("setString", "setString", 60));
 	}
 	/**
 	 *
@@ -33,7 +34,7 @@ public class SpringBootDemoRedisApplicationTests {
 	 */
 	@Test
 	public void getString() {
-		System.out.println(redisUtil.get("setString"));
+		System.out.println(redisService.getString("setString"));
 	}
 }
 
