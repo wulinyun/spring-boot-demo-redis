@@ -23,7 +23,8 @@ public class SpringBootDemoRedisApplicationTests {
 	 */
 	@Test
 	public void setString() {
-		redisUtil.set("setString", "setString", 60);
+		
+		System.out.println(redisUtil.set("setString", "setString", 60));
 	}
 	/**
 	 *
@@ -32,7 +33,7 @@ public class SpringBootDemoRedisApplicationTests {
 	 */
 	@Test
 	public void getString() {
-		redisUtil.get("setString");
+		System.out.println(redisUtil.get("setString"));
 	}
 }
 
