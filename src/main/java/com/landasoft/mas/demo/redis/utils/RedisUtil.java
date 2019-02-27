@@ -18,6 +18,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 /**
@@ -26,6 +27,7 @@ import org.springframework.util.CollectionUtils;
  * @author wulinyun  
  * @date 2019年2月26日 下午3:39:10
  */
+@Component
 public class RedisUtil {
 	private final static Log logger = LogFactory.getLog(RedisUtil.class);
 	@Autowired
