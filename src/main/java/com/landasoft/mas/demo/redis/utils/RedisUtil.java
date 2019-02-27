@@ -77,6 +77,12 @@ public class RedisUtil {
 			return false;
 		}
 	}
+	/**
+	 * 
+	 * <p>Title: del</p>  
+	 * <p>Description: 删除缓存</p>  
+	 * @param keys
+	 */
 	@SuppressWarnings("unchecked")
 	public void del(String... keys) {
 		if(keys != null && keys.length >0) {
@@ -394,6 +400,14 @@ public class RedisUtil {
 			return 0;
 		}
 	}
+	/**
+	 * 
+	 * <p>Title: setRemove</p>  
+	 * <p>Description: 移除set中key对应的多个值</p>  
+	 * @param key 键
+	 * @param values 可变参数的多个值
+	 * @return
+	 */
 	public long setRemove(String key,Object... values) {
 		try {
 			Long count = redisTemplate.opsForSet().remove(key, values);
