@@ -19,21 +19,13 @@ public class SpringBootDemoRedisApplicationTests {
 	}
 	/**
 	 * 
-	 * <p>Title: setString</p>  
-	 * <p>Description: 设置String测试</p>
+	 * <p>Title: setAndGetString</p>  
+	 * <p>Description: 设置以及获取redis的String缓存</p>
 	 */
 	@Test
-	public void setString() {
+	public void setAndGetString() {
 		
 		System.out.println(redisService.setString("setString", "setString", 60));
-	}
-	/**
-	 *
-	 * <p>Title: getString</p>  
-	 * <p>Description: 获取String测试</p>
-	 */
-	@Test
-	public void getString() {
 		System.out.println(redisService.getString("setString"));
 	}
 }
